@@ -35,10 +35,36 @@
         float: right;
     }
 
-    #header #lnk-manager, #lnk-designer, #lnk-editor, #lnk-approval, #lnk-users, #lnk-profiles {
+    #header #lnk-records, #lnk-manager, #lnk-designer, #lnk-editor, #lnk-approval, #lnk-users, #lnk-profiles, #lnk-notifications {
         display: none;
     }
 
+/*lang*/
+#lang {
+    margin-top: 10px;
+    margin-right: 20px;
+    color: #000;
+}
+
+#lang .lang{
+    cursor: pointer;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+#lang .lang:hover{
+    opacity:.8;
+}
+
+.dropdown-menu{
+    min-width: 90px;
+}
+
+/*notifications*/
+#lnk-notifications {
+    margin: 0 !important;
+    margin-top: 10px !important;
+}
 
 #wf-manager{
 	position: absolute; 
@@ -73,7 +99,7 @@
 #wf-notifier {
     position: absolute;
     top: 10px;
-    right: 320px;
+    right: 470px;
     left: 10px;
 }
 
@@ -91,7 +117,7 @@
 
     #wf-search #wf-search-text-container {
         position: absolute;
-        right: 75px;
+        right: 79px;
         left: 0;
     }
         #wf-search #wf-search-text-container #wf-search-text {
@@ -101,7 +127,7 @@
     #wf-search #wf-search-action {
         position: absolute;
         right: 0px;
-        width: 70px;
+        width: 74px;
     }
 
 /* workflows */
@@ -176,7 +202,7 @@
 #wf-jobs {
     position: absolute;
     top: 75px;
-    bottom: 365px;
+    bottom: calc(100% - 250px);
     right: 10px;
     left: 10px;
     overflow: hidden;
@@ -193,7 +219,6 @@
 }
 
 #wf-jobs tbody {
-    height: calc(100% - 40px);
     overflow-y: auto;
     overflow-x: auto;
 }
@@ -208,11 +233,15 @@
 }
 
 #wf-jobs #wf-jobs-table .wf-jobId {
-    width: 300px;
+    width: 320px;
 }
 
 #wf-jobs #wf-jobs-table .wf-n {
     width: 200px;
+}
+
+#wf-jobs #wf-jobs-table .wf-d {
+    width: 500px;
 }
 
 #wf-jobs #wf-jobs-table .wf-startedOn {
